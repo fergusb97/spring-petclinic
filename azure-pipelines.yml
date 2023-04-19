@@ -38,9 +38,11 @@ steps:
     repository: 'bergusf97 / petclinic'
     command: 'build'
     Dockerfile: '**/Dockerfile'
+    tags: 'latest'
 
 - task: Docker@2
   inputs:
     containerRegistry: 'Docker'
     repository: 'bergusf97 / petclinic'
     command: 'push'
+    tags: 'latest'
